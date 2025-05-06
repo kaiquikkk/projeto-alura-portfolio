@@ -1,29 +1,4 @@
 
-To create a professional and visually appealing portfolio of your work resume in HTML, I need to include typical sections such as:
-- A header with your name and contact information
-- A summary or objective statement
-- A section listing your work experience (job titles, companies, dates, descriptions)
-- A skills section
-- Education section (optional but common)
-- Possibly links to social media or professional profiles (LinkedIn, GitHub etc.)
-
-The portfolio will be a single HTML file with inline CSS and JavaScript if needed. It should be modern, stylish, and fully mobile-responsive, fitting within 600px height and 350px width for mobile users.
-
-Since you did not provide the actual content of your work resume, I will create a clean, well-structured template and placeholder content that you can easily customize with your own details.
-
-Plan:
-- Create a single HTML file named portfolio.html
-- Include all styling and interaction inline in the file
-- Structure content as: header with name/contact, summary/objective, work experience with multiple job entries, skills, and education
-- Make sure the layout fits perfectly on small mobile screens without scrolling
-
-No dependent files, no backend functionality required.
-
-I will proceed now with creating this portfolio HTML file.
-
-
-`portfolio.html`
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
