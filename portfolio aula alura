@@ -1,0 +1,194 @@
+
+To create a professional and visually appealing portfolio of your work resume in HTML, I need to include typical sections such as:
+- A header with your name and contact information
+- A summary or objective statement
+- A section listing your work experience (job titles, companies, dates, descriptions)
+- A skills section
+- Education section (optional but common)
+- Possibly links to social media or professional profiles (LinkedIn, GitHub etc.)
+
+The portfolio will be a single HTML file with inline CSS and JavaScript if needed. It should be modern, stylish, and fully mobile-responsive, fitting within 600px height and 350px width for mobile users.
+
+Since you did not provide the actual content of your work resume, I will create a clean, well-structured template and placeholder content that you can easily customize with your own details.
+
+Plan:
+- Create a single HTML file named portfolio.html
+- Include all styling and interaction inline in the file
+- Structure content as: header with name/contact, summary/objective, work experience with multiple job entries, skills, and education
+- Make sure the layout fits perfectly on small mobile screens without scrolling
+
+No dependent files, no backend functionality required.
+
+I will proceed now with creating this portfolio HTML file.
+
+
+`portfolio.html`
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Portfólio Profissional</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 600px; /* Fixed height for mobile */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e1e5ea;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  header p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  section {
+    margin-top: 20px;
+    flex-shrink: 0;
+  }
+  .summary {
+    background: #eaf0f6;
+    border-radius: 8px;
+    padding: 12px;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  .experience-item {
+    margin-bottom: 15px;
+  }
+  .experience-item h3 {
+    color: #34495e;
+    font-size: 1rem;
+  }
+  .experience-item span {
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 6px;
+  }
+  .experience-item p {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skill {
+    background: #3498db;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+  footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  /* Scroll container for longer content */
+  main {
+    overflow-y: auto;
+    padding-right: 10px;
+    flex-grow: 1;
+  }
+  /* Custom scrollbar for webkit */
+  main::-webkit-scrollbar {
+    width: 5px;
+  }
+  main::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Kaiqui Teixeira Assis Pereira</h1>
+  <p>Kaiqui.Teixeita.Assis@gmail.com | (12) 99114-4062 | Caçapava-São paulo, Brasil</p>
+</header>
+<main>
+  <section class="summary">
+    <h2>Resumo Profissional</h2>
+    <p>Profissional altamente motivado com experiência em desenvolvimento web, design de interfaces e gestão de projetos. Focado em entregar soluções eficientes e inovadoras para clientes.</p>
+  </section>
+
+  <section class="experience">
+    <h2>Experiência de Trabalho</h2>
+
+    <div class="experience-item">
+      <h3>Desenvolvedor Frontend - Empresa X</h3>
+      <span>Jan 2022 - Atual | São Paulo, SP</span>
+      <p>Desenvolvimento de interfaces web responsivas usando HTML, CSS e JavaScript. Colaboração com equipes de design e backend para entregar produtos de alta qualidade.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Designer UX/UI - Agência Y</h3>
+      <span>Mar 2020 - Dez 2021 | Rio de Janeiro, RJ</span>
+      <p>Criação de protótipos e layouts para aplicações móveis e web. Pesquisa de usabilidade e melhoria da experiência do usuário final.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Assistente de Projetos - Empresa Z</h3>
+      <span>Fev 2018 - Fev 2020 | Belo Horizonte, MG</span>
+      <p>Coordenação e acompanhamento de etapas de projetos, controle de prazos e comunicação com stakeholders.</p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Figma</span>
+      <span class="skill">Git</span>
+      <span class="skill">Inglês Avançado</span>
+      <span class="skill">Gestão Ágil</span>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>Formação</h2>
+    <p><strong>Bacharel em Ciência da Computação</strong> - Universidade ABC (2014 - 2017)</p>
+  </section>
+</main>
+
+<footer>
+  © 2024 Kaiqui Teixeira. Todos os direitos reservados.
+</footer>
+</body>
+</html>
+
+```
